@@ -5,8 +5,539 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link rel="stylesheet" href="https://abs.twimg.com/a/1482285210/css/t1/twitter_core.bundle.css">
+  <link rel="stylesheet" href="https://abs.twimg.com/a/1482285210/css/t1/twitter_more_1.bundle.css">
+  <link rel="stylesheet" href="https://abs.twimg.com/a/1482285210/css/t1/twitter_more_2.bundle.css">
+  <meta name="msapplication-TileImage" content="//abs.twimg.com/favicons/win8-tile-144.png"/>
+　<meta name="msapplication-TileColor" content="#00aced"/>
+　<link rel="mask-icon" sizes="any" href="https://abs.twimg.com/a/1482285210/img/t1/favicon.svg" color="#55acee">
+　<link rel="shortcut icon" href="//abs.twimg.com/favicons/favicon.ico" type="image/x-icon">
+　<link rel="apple-touch-icon" href="https://abs.twimg.com/icons/apple-touch-icon-192x192.png" sizes="192x192">
+　<link rel="manifest" href="/manifest.json">
+  <meta name="swift-page-name" id="swift-page-name" content="home">
+  <link rel="canonical" href="https://twitter.com/?lang=ja">
+　<link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Twitter">
+  <link id="async-css-placeholder">
+
+<style id="user-style-kogihara">
+  a,
+  a:hover,
+  a:focus,
+  a:active {
+    color: #1DA1F2;
+  }
+  .u-textUserColor,
+  .u-textUserColorHover:active,
+  .u-textUserColorHover:hover,
+  .u-textUserColorHover:hover .ProfileTweet-actionCount,
+  .u-textUserColorHover:focus {
+    color: #1DA1F2 !important;
+  }
+  .u-borderUserColor,
+  .u-borderUserColorHover:hover,
+  .u-borderUserColorHover:focus {
+    border-color: #1DA1F2 !important;
+  }
+  .u-bgUserColor,
+  .u-bgUserColorHover:hover,
+  .u-bgUserColorHover:focus {
+    background-color: #1DA1F2 !important;
+  }
+  .u-dropdownUserColor > li:hover,
+  .u-dropdownUserColor > li:focus,
+  .u-dropdownUserColor > li > button:hover,
+  .u-dropdownUserColor > li > button:focus {
+    color: #fff !important;
+    background-color: #1DA1F2 !important;
+  }
+  .u-boxShadowInsetUserColorHover:hover,
+  .u-boxShadowInsetUserColorHover:focus {
+    box-shadow: inset 0 0 0 5px #1DA1F2 !important;
+  }
+  .u-textUserColorLight {
+    color: #A4D9F9 !important;
+  }
+  .u-borderUserColorLight,
+  .u-borderUserColorLightFocus:focus,
+  .u-borderUserColorLightHover:hover,
+  .u-borderUserColorLightHover:focus {
+    border-color: #A4D9F9 !important;
+  }
+  .u-bgUserColorLight {
+    background-color: #A4D9F9 !important;
+  }
+  .u-boxShadowUserColorLighterFocus:focus {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.05), inset 0 1px 2px rgba(29,161,242,0.25) !important;
+  }
+  .u-textUserColorLightest {
+    color: #E8F5FD !important;
+  }
+  .u-borderUserColorLightest {
+    border-color: #E8F5FD !important;
+  }
+  .u-bgUserColorLightest {
+    background-color: #E8F5FD !important;
+  }
+  .u-textUserColorLighter {
+    color: #C6E7FB !important;
+  }
+  .u-borderUserColorLighter {
+    border-color: #C6E7FB !important;
+  }
+  .u-bgUserColorLighter {
+    background-color: #C6E7FB !important;
+  }
+  .u-bgUserColorDarkHover:hover {
+    background-color: #1780C1 !important;
+  }
+  .u-borderUserColorDark {
+    border-color: #1780C1 !important;
+  }
+  .u-bgUserColorDarkerActive:active {
+    background-color: #116091 !important;
+  }
+
+a,
+.btn-link,
+.btn-link:focus,
+.icon-btn,
+
+.pretty-link b,
+.pretty-link:hover s,
+.pretty-link:hover b,
+.pretty-link:focus s,
+.pretty-link:focus b,
+/* Account Group */
+.metadata a:hover,
+.metadata a:focus,
+
+.account-group:hover .fullname,
+.account-group:focus .fullname,
+.account-summary:focus .fullname,
+
+.message .message-text a,
+.stats a strong,
+.plain-btn:hover,
+.plain-btn:focus,
+.dropdown.open .user-dropdown.plain-btn,
+.open > .plain-btn,
+#global-actions .new:before,
+.module .list-link:hover,
+.module .list-link:focus,
+
+.stats a:hover,
+.stats a:hover strong,
+.stats a:focus,
+.stats a:focus strong,
+
+.find-friends-sources li:hover .source,
+
+.stream-item a:hover .fullname,
+.stream-item a:focus .fullname,
+
+.stream-item .view-all-supplements:hover,
+.stream-item .view-all-supplements:focus,
+
+.tweet .time a:hover,
+.tweet .time a:focus,
+.tweet .details.with-icn b,
+.tweet .details.with-icn .Icon,
+
+.stream-item:hover .original-tweet .details b,
+.stream-item .original-tweet.focus .details b,
+.stream-item.open .original-tweet .details b,
+
+.client-and-actions a:hover,
+.client-and-actions a:focus,
+
+.dismiss-btn:hover b,
+
+.tweet .context .pretty-link:hover s,
+.tweet .context .pretty-link:hover b,
+.tweet .context .pretty-link:focus s,
+.tweet .context .pretty-link:focus b,
+
+.list .username a:hover,
+.list .username a:focus,
+.list-membership-container .create-a-list,
+.list-membership-container .create-a-list:hover,
+
+.card .list-details a:hover,
+.card .list-details a:focus,
+.card .card-body:hover .attribution,
+.card .card-body .attribution:focus,
+.new-tweets-bar,
+
+.remove-background-btn,
+
+.stream-item-activity-notification .latest-tweet .tweet-row a:hover,
+.stream-item-activity-notification .latest-tweet .tweet-row a:focus,
+.stream-item-activity-notification .latest-tweet .tweet-row a:hover b,
+.stream-item-activity-notification .latest-tweet .tweet-row a:focus b {
+    color: #0084B4;
+}
+    #global-actions > li > a {
+      border-bottom-color: #0084B4;
+    }
+    #global-actions > li:hover > a,
+    #global-actions > li > a:focus,
+    .nav.right-actions > li > a:hover,
+    .nav.right-actions > li > button:hover,
+    .nav.right-actions > li > a:focus,
+    .nav.right-actions > li > button:focus {
+      color: #0084B4;
+    }
+    /* Surpress the new connect glow if in experiment. */
+     #global-actions .people.new:before {
+       content: none;
+     }
+
+  /* hover state for found media items */
+  .FoundMediaSearch--keyboard .FoundMediaSearch-focusable.is-focused {
+    border-color: #1DA1F2;
+  }
+
+  /* hover state for photo select button*/
+  .photo-selector:hover .btn,
+  .icon-btn:hover,
+  .icon-btn:active,
+  .icon-btn.active,
+  .icon-btn.enabled {
+    border-color: #0084B4;
+    border-color: rgba(0,132,180,.5);
+    color: #0084B4;
+  }
+
+  /* hover state for photo select button*/
+  .photo-selector:hover .btn,
+  .icon-btn:hover {
+    background-image: linear-gradient(rgba(255,255,255,0), rgba(0,132,180,.1));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00FFFFFF', endColorstr='#190084B4'); /* IE8-9 */
+  }
+
+  .icon-btn.disabled,
+  .icon-btn.disabled:hover,
+  .icon-btn[disabled],
+  .icon-btn[aria-disabled=true] {
+    color: #0084B4;
+  }
+
+  /* tweet-btn can have primary-btn class as well so the following rules ensure that the correct background color is applied */
+  .tweet-btn,
+  .tweet-btn:focus {
+    background-color: #0084B4;
+    background: rgba(0,132,180,.8);
+  }
+
+  .tweet-btn:hover,
+  .tweet-btn:active,
+  .tweet-btn.active {
+    background-color: #0084B4;
+  }
+
+  .tweet-btn.btn.disabled,
+  .tweet-btn.btn.disabled:hover,
+  .tweet-btn.btn[disabled],
+  .tweet-btn.btn[aria-disabled=true] {
+    background: #0084B4;
+  }
+
+  .btn:focus,
+  .btn.focus,
+  .Button:focus,
+  .EmojiPicker-item.is-focused {
+    box-shadow:
+      0 0 0 1px #fff,
+      0 0 0 3px rgba(0, 132, 180, 0.5);
+  }
+
+  .selected-stream-item:focus {
+    box-shadow: 0 0 0 3px rgba(0, 132, 180, 0.5);
+  }
+
+  /* highlighting when navigate through timeline stream table view with j & k. */
+  .js-navigable-stream.stream-table-view .selected-stream-item[tabindex="-1"]:focus {
+    outline: 3px solid rgba(0, 132, 180, 0.5) !important;
+  }
+
+  /* box-shadow does not work with table tr element */
+  .js-navigable-stream.stream-table-view .selected-stream-item:focus {
+    box-shadow: none;
+  }
+
+  /**
+   * 1. Bring actionable tweet to top when active to ensure border
+   *    highlighting wraps entire tweet. Value must be at least at if not
+   *    higher than the z-index value of ProfileHeading to ensure first
+   *    tweet in timeline receives border on all four sides.
+   *    NOTE: z-index should be 2 to avoid conflicts with .ProfileCanopy and .ProfileCard-avatarLink
+   */
+
+  .js-stream-item.is-selected:focus .ProfileCard,
+  .QuoteTweet:hover,
+  .QuoteTweet:focus,
+  .QuoteTweet:active {
+    border-color: rgba(0, 132, 180, 0.5);
+    z-index: 2; /* 1 */
+  }
+
+  .global-dm-nav.new.with-count .dm-new {
+    background: #fff;
+  }
+
+  .global-dm-nav.new.with-count .dm-new .count-inner {
+    background: #0084B4;
+  }
+
+  .global-nav .people .count .count-inner {
+    background: #0084B4;
+  }
+
+  .dropdown-menu li > a:hover,
+  .dropdown-menu li > a:focus,
+  .dropdown-menu .dropdown-link:hover,
+  .dropdown-menu .dropdown-link:focus,
+  .dropdown-menu .dropdown-link.is-focused,
+  .dropdown-menu li:hover .dropdown-link,
+  .dropdown-menu li:focus .dropdown-link,
+  .dropdown-menu .typeahead-recent-search-item.selected,
+  .dropdown-menu .typeahead-saved-search-item.selected,
+  .dropdown-menu .selected a,
+  .dropdown-menu .dropdown-link.selected {
+    background-color: #0084B4 !important;
+  }
+
+/* give tweet boxes 10% of the users link color as background */
+.home-tweet-box,
+.LiveVideo-tweetBox,
+.RetweetDialog-commentBox,
+.WebToast-box--altColor {
+  background-color: #E8F5FD;
+}
+
+.top-timeline-tweetbox .timeline-tweet-box .tweet-form.condensed .tweet-box {
+  color: #1DA1F2;
+}
+/* give tweet box containers an outline using the users link color */
+.RichEditor,
+.TweetBoxAttachments {
+  border-color: #C6E7FB;
+}
+
+input:focus,
+textarea:focus,
+div[contenteditable="true"]:focus,
+div[contenteditable="true"].fake-focus {
+  border-color: #66B5D2;
+  box-shadow: inset 0 0 0 1px rgba(0, 132, 180, 0.7);
+}
+
+.tweet-box textarea:focus,
+.tweet-box input[type=text],
+.currently-dragging .tweet-form.is-droppable .tweet-drag-help,
+.tweet-box[contenteditable="true"]:focus,
+.RichEditor.is-fakeFocus,
+.RichEditor.is-fakeFocus ~ .TweetBoxAttachments {
+  border-color: #A4D9F9;
+  box-shadow: none;
+}
+
+.MomentCapsuleItem.selected-stream-item:focus {
+  box-shadow: 0 0 0 3px rgba(0, 132, 180, 0.5);
+}
+
+s,
+.pretty-link:hover s,
+.pretty-link:focus s,
+.stream-item-activity-notification .latest-tweet .tweet-row a:hover s,
+.stream-item-activity-notification .latest-tweet .tweet-row a:focus s {
+    color: #0084B4;
+}
+
+.vellip,
+.vellip:before,
+.vellip:after,
+.conversation-module > li:after,
+.conversation-module > li:before,
+.ThreadedConversation-tweet:not(.is-hiddenAncestor) ~ .ThreadedConversation-tweet:before,
+.ThreadedConversation-tweet:after,
+.ThreadedConversation-viewOther:before,
+.ThreadedConversation-unavailableTweet:before,
+.ThreadedConversation-unavailableTweet:after,
+.ThreadedConversation--permalinkTweetWithAncestors:before {
+    background-color: #66B5D2;
+}
+
+.tweet .sm-reply,
+.tweet .sm-rt,
+.tweet .sm-fav,
+.tweet .sm-image,
+.tweet .sm-video,
+.tweet .sm-audio,
+.tweet .sm-geo,
+.tweet .sm-in,
+.tweet .sm-trash,
+.tweet .sm-more,
+.tweet .sm-page,
+.tweet .sm-embed,
+.tweet .sm-summary,
+.tweet .sm-chat,
+
+.timelines-navigation .active .profile-nav-icon,
+.timelines-navigation .profile-nav-icon:hover,
+.timelines-navigation .profile-nav-link:focus .profile-nav-icon,
+
+.sm-top-tweet {
+    background-color: #0084B4;
+}
+
+.enhanced-mini-profile .mini-profile .profile-summary {
+  background-image: url(https://abs.twimg.com/a/1482285210/img/t1/grey_header_web.jpg);
+}
+
+  #global-tweet-dialog .modal-header {
+    border-bottom: solid 1px rgba(0, 132, 180, .25);
+  }
+
+  #global-tweet-dialog .modal-tweet-form-container {
+    background-color: #0084B4;
+    background: rgba(0, 132, 180, .1);
+  }
+
+  .inline-reply-tweetbox {
+    background-color: #E8F5FD;
+  }
+
+</style>
+<style id="user-style-kogihara-header-img" class="js-user-style-header-img">
+
+    body.user-style-kogihara .enhanced-mini-profile .mini-profile .profile-summary {
+      background-image: url(https://abs.twimg.com/a/1482285210/img/t1/grey_header_web.jpg);
+    }
+</style>
+      <script id="extra_cookies" nonce="zSze278M+9vJjqr3Y2Lp5Q==">
+        document.cookie="external_referer=&quot;padhuUp37zjgzgv1mFWxJ1GGR6w5wXXNb61MrkCjQoc=|0&quot;; Expires=Thu, 29 Dec 2016 02:34:51 UTC; Path=/"
+    </script>
+
+
+    <input type="hidden" class="swift-boot-module" value="app/pages/home">
+  <input type="hidden" id="swift-module-path" value="https://abs.twimg.com/c/swift/ja">
+
+  
+    <script src="https://abs.twimg.com/c/swift/ja/init.67f48e75182a60eb6addb34b5608ea41108a68af.js" async></script>
+    
 </head>
+
+
 <body>
+  <div class="topbar js-topbar">
+  <div class="ProfilePage-editingOverlay">
+  </div>
+  
+  <div class="global-nav" data-section-term="top_nav">
+    <div class="global-nav-inner">
+      <div class="container">
+        <h1 class="Icon Icon--bird bird-topbar-etched" style="display: inline-block; width: 24px; height: 21px;">
+          <span class="visuallyhidden">Twitter</span>
+        </h1>
+        
+        
+        <div role="navigation" style="display: inline-block;">
+          <ul class="nav js-global-actions" id="global-actions">
+            <li id="global-nav-home" class="home active" data-global-action="home">
+              <a class="js-nav js-tooltip js-dynamic-tooltip" data-placement="bottom" href="/tweets" data-component-context="home_nav" data-nav="home">
+                <span class="Icon Icon--home Icon--large">
+                </span>
+                <span class="text">ホーム
+                </span>
+              </a>
+            </li>
+            <li class="people notifications" data-global-action="connect">
+              <a class="js-nav js-tooltip js-dynamic-tooltip" data-placement="bottom" href="/tweets" data-component-context="connect_nav" data-nav="connect">
+                <span class="Icon Icon--notifications Icon--large">
+                </span>
+                <span class="text">通知
+                </span>
+                <span class="count">
+                  <span class="count-inner">0
+                  </span>
+                </span>
+              </a>
+            </li>
+            <li class="dm-nav">
+              <a role="button" href="/tweets" class="js-tooltip js-dynamic-tooltip global-dm-nav" data-placement="bottom">
+                <span class="Icon Icon--dm Icon--large">
+                </span>
+                <span class="text">メッセージ
+                </span>
+                <span class="dm-new">
+                  <span class="count-inner">
+                  </span>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="pull-right" style="display: inline-block;">
+          <div role="search">
+            <form class="t1-form form-search js-search-form" action="/search" id="global-nav-search">
+              <label class="visuallyhidden" for="search-query">検索クエリ
+              </label>
+              <input class="search-input" type="text" id="search-query" placeholder="キーワード検索" name="q" autocomplete="off" spellcheck="false">
+                <span class="search-icon js-search-action">
+                  <button type="submit" class="Icon Icon--search nav-search">
+                    <span class="visuallyhidden">キーワード検索
+                    </span>
+                  </button>
+                </span>
+            </form>
+          </div>
+          <ul class="nav right-actions">
+            <li class="me dropdown session js-session" data-global-action="t1me" id="user-dropdown">
+              <a href="#" class="btn js-tooltip settings dropdown-toggle js-dropdown-toggle" id="user-dropdown-toggle" title="プロフィールと設定" data-placement="bottom">
+                <img class="avatar size32" src="https://pbs.twimg.com/profile_images/1447855246/IMG_1211_normal.JPG" alt="Profile and settings" data-user-id="111280199">
+              </a>
+              <div class="dropdown-menu">
+                <div class="dropdown-caret">
+                  <span class="caret-outer"></span>
+                  <span class="caret-inner"></span>
+                </div>
+                <ul>
+                  <li class="current-user" data-name="profile">
+                    <a href="/kogihara" class="account-summary account-summary-small js-nav" data-nav="view_profile">
+                      <div class="content">
+                        <div class="account-group js-mini-current-user" data-user-id="111280199" data-screen-name="kogihara">
+                          <b class="fullname">荻原　鶴　（Kaku Ogihara）
+                          </b>
+                          <span class="screen-name hidden" dir="ltr">@kogihara
+                          </span>
+                          <small class="metadata">プロフィールを表示
+                          </small>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            
+            <li role="complementary" aria-labelledby="global-new-tweet-button" class="topbar-tweet-btn">
+              <a class="js-nav js-tooltip js-dynamic-tooltip" data-placement="bottom" href="/tweets/new" data-component-context="home_nav" data-nav="home">
+                <span class="Icon Icon--tweet Icon--large">
+                </span>
+                <span class="text">ツイート
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
 <%= yield %>
 
